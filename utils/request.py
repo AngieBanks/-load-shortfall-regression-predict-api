@@ -48,7 +48,7 @@ print("")
 api_response = requests.post(url, json=feature_vector_json)
 
 # Display the prediction result
-if type(api_response.json()) != float:  
+if  type(api_response.json()) != float:  
     print("Received POST response:")
     print("*"*50)
     print(f"API prediction result: {api_response.json()[0]}")
